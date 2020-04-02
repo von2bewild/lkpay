@@ -8,7 +8,7 @@ import About from "containers/About";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Navigation />
         <Switch>
           <Route path="/about">

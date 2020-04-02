@@ -48,6 +48,7 @@ export const Wrapper = styled.div`
 
     .logo {
       width: 129px;
+      display: block;
     }
   }
 `;
@@ -55,6 +56,9 @@ export const Wrapper = styled.div`
 export const MainNav = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1200px) {
+    display: none;
+  }
   a {
     display: inline-block;
     margin: 0 10px;
@@ -73,6 +77,9 @@ export const MainNav = styled.div`
 export const SideNav = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 
   a {
     font-size: 12px;

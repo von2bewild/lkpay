@@ -17,11 +17,11 @@ function Footer() {
       <footer>
         <img src={logo} alt="" />
         <p>
-          Copyright © 2020 Paysafe Holdings UK Limited. All rights reserved.
-          Skrill Limited (FRN: 900001) is authorised by the Financial Conduct
+          Copyright © 2020 LKPay Holdings UK Limited. All rights reserved.<br />
+          LKPay Limited (FRN: 900001) is authorised by the Financial Conduct
           Authority under the Electronic Money Regulations 2011 for the issuing
           of electronic money and payment instruments. LKPays is a registered
-          trademark of LKPays Limited. Paysafe Financial Services Limited (FRN:
+          trademark of LKPay Limited. LKPay Financial Services Limited (FRN:
           900015) is authorised by the Financial Conduct Authority under the
           Electronic Money Regulations 2011 for the issuing of electronic money
           and payment instruments.

@@ -93,9 +93,9 @@ export const SideNav = styled.div`
   }
   .btn {
     border: 1px solid ${colors.navy_blue};
-    font-size: 10px;
+    font-size: 12px;
     text-transform: uppercase;
-    padding: 5px 25px;
+    padding: 8px 25px;
     margin: 0 5px;
     border-radius: 4px;
     font-weight: 700;

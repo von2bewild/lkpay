@@ -7,7 +7,7 @@ import * as S from './styles';
 function Navigation() {
   return (
     <S.Wrapper>
-      <header>
+      {/* <header>
         <section>
           <a href="/" className="active">
             Personal
@@ -15,7 +15,7 @@ function Navigation() {
           <span className="divider" />
           <a href="/">Business</a>
         </section>
-      </header>
+      </header> */}
       <nav>
         <NavLink to="/">
           <img src={logo} alt="" className="logo" />

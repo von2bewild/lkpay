@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
 
-import * as S from './styles';
+import Header from './Header';
+import Advantages from './Advantages';
+import Merchants from './Merchants';
 
 function About() {
   return (
-    <S.Wrapper>
+    <Fragment>
       <Navigation />
-      <h1>About</h1>
-    </S.Wrapper>
+      <Header />
+      <Advantages />
+      <Merchants />
+      <Footer />
+    </Fragment>
   );
 }
 

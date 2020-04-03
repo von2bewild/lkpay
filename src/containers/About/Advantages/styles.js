@@ -41,13 +41,14 @@ export const Wrapper = styled.div`
       .label {
         font-size: 14px;
         color: ${colors.gray_1};
-        margin-top: 10px;
+        margin: 10px 0 0;
         display: block;
       }
       .label2 {
         font-size: 14px;
         color: ${colors.dark_1};
         max-width: 195px;
+        margin: 10px 0;
       }
       img {
         display: block;
@@ -100,7 +101,27 @@ export const Wrapper = styled.div`
 `;
 
 export const TableWrapper = styled.div`
-  table {
-    width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+
+  .country {
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
+  .ant-table-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    overflow: auto;
+    margin: 0 auto;
+  }
+  .ant-table-tbody > tr > td {
+    background: #fff;
+  }
+  p {
+    margin: 0;
   }
 `;

@@ -31,7 +31,7 @@ function Header() {
           <p className="label">Hiroshige in Japan</p>
         </li>
       </ul>
-      <h6 className="label3">
+      <h6>
         Example :<br />
         Steve from England wants to send money to Hiroshige in Japan. Without
         LKPAY, Steve’s only option is to send money via international transfer.

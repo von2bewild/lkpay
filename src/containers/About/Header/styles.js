@@ -38,56 +38,58 @@ export const Wrapper = styled.div`
     margin: 50px 0 30px;
     li {
       padding: 0 15px;
+
+      .person-img {
+        width: 130px;
+        display: block;
+        margin: auto;
+      }
+      .money-icon {
+        width: 50px;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .label {
+        font-size: 14px;
+        color: ${colors.gray_1};
+        margin: 10px 0 0;
+        display: block;
+      }
+      .label2 {
+        font-size: 14px;
+        color: ${colors.dark_1};
+        max-width: 195px;
+        margin: 10px 0;
+      }
+      .arrow {
+        width: 195px;
+        height: 2px;
+        background: ${colors.sky_blue};
+        position: relative;
+        display: block;
+
+        &:after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 6px solid transparent;
+          border-left: 13px solid ${colors.sky_blue};
+          border-bottom: 6px solid transparent;
+          top: -5px;
+          right: -5px;
+        }
+      }
     }
   }
-  .person-img {
-    width: 130px;
-    display: block;
-    margin: auto;
-  }
-  .money-icon {
-    width: 50px;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  .label {
+  h6 {
     font-size: 14px;
     color: ${colors.gray_1};
-    margin-top: 10px;
-    display: block;
-  }
-  .label2 {
-    font-size: 14px;
-    color: ${colors.dark_1};
-    max-width: 195px;
-  }
-  .label3 {
-    font-size: 14px;
-    color: ${colors.dark_1};
     text-align: left;
     font-weight: 400;
     max-width: 800px;
     margin: auto;
     line-height: 1.4;
-  }
-  .arrow {
-    width: 195px;
-    height: 2px;
-    background: ${colors.sky_blue};
-    position: relative;
-    display: block;
-
-    &:after {
-      position: absolute;
-      content: '';
-      width: 0;
-      height: 0;
-      border-top: 6px solid transparent;
-      border-left: 13px solid ${colors.sky_blue};
-      border-bottom: 6px solid transparent;
-      top: -5px;
-      right: -5px;
-    }
   }
 
   > section {
@@ -133,5 +135,6 @@ export const Grid = styled.div`
     margin: 0 0 15px 0;
     font-weight: 700;
     line-height: 1.4;
+    color: ${colors.navy_blue};
   }
 `;

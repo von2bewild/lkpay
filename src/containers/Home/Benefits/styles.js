@@ -37,15 +37,16 @@ export const Wrapper = styled.div`
     }
     article {
       margin-left: 60px;
-      color: #fff;
       h4 {
         margin: 0;
         font-size: 29px;
         letter-spacing: -0.14px;
+        color: #fff;
       }
       p {
         margin: 10px 0 0 0;
         font-size: 17px;
+        color: #fff;
         max-width: 600px;
       }
     }

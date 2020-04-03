@@ -24,7 +24,7 @@ function Merchants() {
           <p className="label2">Pay/Transfer funds within a minute</p>
           <span className="arrow" />
           <span className="arrow2" />
-          <p className="label2">STICPAY Merchant service providers</p>
+          <p className="label2">LKPay Merchant service providers</p>
         </li>
         <li>
           <img src="" alt="" />

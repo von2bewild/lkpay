@@ -41,14 +41,14 @@ export const Wrapper = styled.div`
       .label {
         font-size: 14px;
         color: ${colors.gray_1};
-        margin-top: 10px;
+        margin: 10px 0 0;
         max-width: 160px;
         display: block;
       }
       .label2 {
         font-size: 14px;
         color: ${colors.dark_1};
-        max-width: 195px;
+        margin: 10px 0;
       }
       img {
         display: block;
@@ -58,7 +58,7 @@ export const Wrapper = styled.div`
         margin: auto;
       }
       .arrow {
-        width: 195px;
+        width: 220px;
         height: 2px;
         background: ${colors.sky_blue};
         position: relative;
@@ -77,7 +77,7 @@ export const Wrapper = styled.div`
         }
       }
       .arrow2 {
-        width: 195px;
+        width: 220px;
         height: 2px;
         background: ${colors.sky_blue};
         position: relative;

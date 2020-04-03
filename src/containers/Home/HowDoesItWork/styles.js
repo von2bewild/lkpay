@@ -69,5 +69,11 @@ export const Wrapper = styled.div`
     color: #fff;
     border-radius: 25px;
     border: none;
+    cursor: pointer;
+    font-weight: 700;
+    &:hover {
+      background: ${colors.sky_blue};
+      color: ${colors.navy_blue};
+    }
   }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from 'assets/logo.png';
 
 import * as S from './styles';
@@ -9,27 +9,47 @@ function Navigation() {
     <S.Wrapper>
       <header>
         <section>
-          <a href="/" className="active">Personal</a>
+          <a href="/" className="active">
+            Personal
+          </a>
           <span className="divider" />
           <a href="/">Business</a>
         </section>
       </header>
       <nav>
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="" className="logo" />
-        </Link>
+        </NavLink>
         <S.MainNav>
-          <Link to="/about">about lkpay</Link>
-          <Link to="/about">fees</Link>
-          <Link to="/about">merchant</Link>
-          <Link to="/about">local bankwire</Link>
-          <Link to="/about">affiliates</Link>
-          <Link to="/about">support</Link>
+          <NavLink to="/about" activeClassName="selected">
+            About LKPay
+          </NavLink>
+          <NavLink to="/fees" activeClassName="selected">
+            Fees
+          </NavLink>
+          <NavLink to="/merchant" activeClassName="selected">
+            Merchant
+          </NavLink>
+          <NavLink to="/local-bankwire" activeClassName="selected">
+            Local Bankwire
+          </NavLink>
+          <NavLink to="/affiliates" activeClassName="selected">
+            Affiliates
+          </NavLink>
+          <NavLink to="/news" activeClassName="selected">
+            News
+          </NavLink>
+          <NavLink to="/support" activeClassName="selected">
+            Support
+          </NavLink>
         </S.MainNav>
         <S.SideNav>
-          <a href="/">exclusive offers</a>
-          <Link to="/" className="btn">login</Link>
-          <Link to="/" className="btn">register</Link>
+          <NavLink to="/" className="btn">
+            login
+          </NavLink>
+          <NavLink to="/" className="btn">
+            register
+          </NavLink>
         </S.SideNav>
       </nav>
     </S.Wrapper>

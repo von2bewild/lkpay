@@ -16,6 +16,24 @@ export const Wrapper = styled.div`
     border: 1px solid #707070;
     border-radius: 21px;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .email-field {
+      padding: 0 20px;
+      border: none;
+    }
+    .email-btn {
+      background: ${colors.navy_blue};
+      height: 62px;
+      color: #fff;
+      border: 1px solid ${colors.navy_blue};
+      border-radius: 21px;
+      width: 130px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
   }
   h2 {
     margin: 0;

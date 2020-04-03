@@ -35,6 +35,11 @@ export const Wrapper = styled.div`
       font-size: 14px;
       color: #023f69;
       font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+      }
     }
     aside {
       display: flex;

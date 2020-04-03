@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   > section {
     width: 100%;
     background: #286198 url(${bg}) center right/contain no-repeat;
-    padding: 60px 40px;
+    padding: 80px 40px;
 
     ul {
       max-width: 1300px;

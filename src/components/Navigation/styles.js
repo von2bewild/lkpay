@@ -62,15 +62,17 @@ export const MainNav = styled.div`
   a {
     display: inline-block;
     margin: 0 10px;
-    text-transform: uppercase;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
     color: ${colors.dark_1};
 
     &:hover {
       color: ${colors.sky_blue};
     }
+  }
+  a.selected {
+    font-weight: 700;
+    color: ${colors.sky_blue};
   }
 `;
 

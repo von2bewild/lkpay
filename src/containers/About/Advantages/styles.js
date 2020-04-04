@@ -13,10 +13,9 @@ export const Wrapper = styled.div`
   }
   > h6 {
     text-align: center;
-    margin: 0;
     font-size: 16px;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 400;
     color: ${colors.dark_1};
     line-height: 1.4;

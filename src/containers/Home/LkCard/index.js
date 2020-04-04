@@ -16,7 +16,7 @@ function LkCard() {
           <h3>LK Card</h3>
           <p>
             Our prepaid cards offer you convenience and control. You simply load
-            a STIC Card with funds and use it for the things you would normally
+            a LKPay Card with funds and use it for the things you would normally
             use cash for. Of course, every card comes with Unionpay in all over
             the world acceptance.
           </p>

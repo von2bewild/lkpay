@@ -3,6 +3,7 @@ import { colors } from 'themes/colors';
 
 export const Wrapper = styled.div`
   padding: 60px 40px;
+  background: ${colors.gray_3};
 
   > h2 {
     text-align: center;
@@ -14,20 +15,27 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 16px;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto 30px;
     color: ${colors.dark_1};
     line-height: 1.4;
     font-weight: 400;
   }
-  > h5 {
-    font-size: 18px;
-    line-height: 1.4;
-    color: ${colors.navy_blue};
-    font-weight: 400;
-    max-width: 700px;
-    margin: 30px auto 0;
-    font-weight: 700;
-    text-align: center;
+  article {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    .check {
+      width: 15px;
+      height: 26px;
+      display: block;
+      flex: 0 0 15px;
+    }
+    p {
+      font-size: 16px;
+      color: ${colors.dark_1};
+      font-weight: 400;
+      margin: 0 0 0 10px;
+    }
   }
   ul {
     display: flex;
@@ -48,6 +56,14 @@ export const Wrapper = styled.div`
         font-size: 14px;
         color: ${colors.dark_1};
         margin: 10px 0;
+        max-width: 220px;
+      }
+      small {
+        font-size: 12px;
+        color: ${colors.gray_2};
+        margin: 10px 0;
+        max-width: 220px;
+        display: block;
       }
       img {
         display: block;

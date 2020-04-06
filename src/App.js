@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from 'containers/Home';
-import About from 'containers/About';
-import Fees from 'containers/Fees';
-import Merchant from 'containers/Merchant';
-import Card from 'containers/Card';
-import Bankwire from 'containers/Bankwire';
-import Affiliates from 'containers/Affiliates';
-import News from 'containers/News';
-import Support from 'containers/Support';
+import Home from 'containers/Home/Loadable';
+import About from 'containers/About/Loadable';
+import Fees from 'containers/Fees/Loadable';
+import Merchant from 'containers/Merchant/Loadable';
+import Card from 'containers/Card/Loadable';
+import Bankwire from 'containers/Bankwire/Loadable';
+import Affiliates from 'containers/Affiliates/Loadable';
+import News from 'containers/News/Loadable';
+import Support from 'containers/Support/Loadable';
 
 function App() {
   return (

@@ -1,21 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from 'assets/logo.png';
+import menu from 'assets/icon-menu.svg';
 
 import * as S from './styles';
 
 function Navigation() {
   return (
     <S.Wrapper>
-      {/* <header>
-        <section>
-          <a href="/" className="active">
-            Personal
-          </a>
-          <span className="divider" />
-          <a href="/">Business</a>
-        </section>
-      </header> */}
       <nav>
         <NavLink to="/">
           <img src={logo} alt="" className="logo" />
@@ -30,7 +22,7 @@ function Navigation() {
           <NavLink to="/merchant" activeClassName="selected">
             Merchant
           </NavLink>
-          <NavLink to="/merchant" activeClassName="selected">
+          <NavLink to="/lkpay-card" activeClassName="selected">
             LKPay Card
           </NavLink>
           <NavLink to="/local-bankwire" activeClassName="selected">
@@ -54,6 +46,9 @@ function Navigation() {
             register
           </NavLink>
         </S.SideNav>
+        <S.NavButton>
+          <img src={menu} alt=""/>
+        </S.NavButton>
       </nav>
     </S.Wrapper>
   );

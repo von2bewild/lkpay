@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   h2 {
     font-size: 45px;
     color: ${colors.navy_blue};
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
   }
 
   ul {

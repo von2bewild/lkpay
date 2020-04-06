@@ -7,26 +7,40 @@ export const Wrapper = styled.div`
   > header {
     width: 100%;
     background: ${colors.gray_3};
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
 
     article {
       max-width: 1300px;
       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 40px 20px;
       display: flex;
       align-items: center;
       position: relative;
       z-index: 1;
+      @media (max-width: 900px) {
+        flex-direction: column;
+        text-align: center;
+      }
 
       h3 {
         color: ${colors.navy_blue};
         font-size: 40px;
         margin-right: 20px;
+        margin: 0 20px 0 0;
+        @media (max-width: 900px) {
+          font-size: 30px;
+          margin-right: 0;
+        }
       }
       p {
         color: ${colors.navy_blue};
         font-size: 12px;
         max-width: 500px;
         font-weight: 700;
+        margin: 0;
       }
     }
   }
@@ -41,6 +55,10 @@ export const Wrapper = styled.div`
       display: flex;
       align-items: center;
       position: relative;
+      @media (max-width: 900px) {
+        height: auto;
+        padding: 40px 0;
+      }
     }
     ul {
       width: 100%;
@@ -50,9 +68,20 @@ export const Wrapper = styled.div`
       padding: 0 40px;
       position: relative;
       z-index: 1;
+      flex-wrap: wrap;
+      @media (max-width: 1200px) {
+        margin: auto;
+      }
+      @media (max-width: 600px) {
+        padding: 0 20px;
+      }
       li {
         flex: 0 0 24%;
         text-align: center;
+        @media (max-width: 900px) {
+          flex: 0 0 49%;
+          margin-top: 20px;
+        }
       }
     }
     .circle {
@@ -64,17 +93,33 @@ export const Wrapper = styled.div`
       justify-content: center;
       border-radius: 50%;
       margin: auto;
+      @media (max-width: 600px) {
+        width: 90px;
+        height: 90px;
+
+        img {
+          width: 50%;
+          height: 50%;
+          object-fit: contain;
+        }
+      }
     }
     h5 {
       font-weight: 700;
       font-size: 18px;
       color: #fff;
       margin: 20px 0 0;
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
     }
     .card {
       position: absolute;
       bottom: 70px;
       right: 50px;
+      @media (max-width: 1200px) {
+        display: none;
+      }
 
       img {
         width: 500px;

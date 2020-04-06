@@ -7,6 +7,18 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 426px;
     background: url(${bgHeader}) center right/cover no-repeat;
+    @media (max-width: 900px) {
+      height: 300px;
+    }
+    @media (max-width: 600px) {
+      height: 250px;
+    }
+    @media (max-width: 500px) {
+      height: 200px;
+    }
+    @media (max-width: 400px) {
+      height: 160px;
+    }
   }
   > section {
     width: 100%;
@@ -20,6 +32,9 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
 
     img {
       width: 144px;
@@ -44,9 +59,16 @@ export const Wrapper = styled.div`
     aside {
       display: flex;
       align-items: center;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
     }
     article {
-      margin-left: 100px;
+      margin-left: 50px;
+      @media (max-width: 1000px) {
+        margin: 20px 0;
+        text-align: center;
+      }
       h4 {
         margin: 0 0 2px 0;
         color: #fff;

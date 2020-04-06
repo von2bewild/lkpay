@@ -37,7 +37,7 @@ export const StyledCircle = styled.div`
   height: 150px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3A4248;
+  border-top-color: #00E5FF;
   -webkit-animation: ${spin} 2s linear infinite;
   animation: ${spin} 2s linear infinite;
   &:before {
@@ -49,7 +49,7 @@ export const StyledCircle = styled.div`
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #D22529;
+    border-top-color: #023F69;
     -webkit-animation: ${spin} 3s linear infinite;
     animation: ${spin} 3s linear infinite;
   }
@@ -62,7 +62,7 @@ export const StyledCircle = styled.div`
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3A4248;
+    border-top-color: #00E5FF;
     -webkit-animation: ${spin} 1.5s linear infinite;
     animation: ${spin} 1.5s linear infinite;
   }

@@ -13,18 +13,24 @@ export const Wrapper = styled.div`
     margin-bottom: 40px;
     color: ${colors.navy_blue};
     font-size: 40px;
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
   }
   ul {
     max-width: 1200px;
     width: 100%;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
     li {
       flex: 0 0 30%;
       max-width: 280px;
-      margin: 0 auto;
+      margin: 20px auto;
       width: 100%;
 
       img {

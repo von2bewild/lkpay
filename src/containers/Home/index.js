@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 import Header from './Header';
 import HowDoesItWork from './HowDoesItWork';
@@ -12,7 +11,6 @@ import Subscribe from './Subscribe';
 function Home() {
   return (
     <Fragment>
-      <Navigation />
       <Header />
       <HowDoesItWork />
       <LkCard />

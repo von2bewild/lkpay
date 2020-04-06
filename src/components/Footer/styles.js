@@ -7,11 +7,20 @@ export const Wrapper = styled.div`
 
   > nav {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
 
     a {
       font-size: 19px;
       color: ${colors.gray_1};
       margin: 0 40px;
+      @media (max-width: 1200px) {
+        margin: 0 20px;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -25,6 +34,9 @@ export const Wrapper = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: 40px auto 0;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
 
     img {
       width: 108px;
@@ -34,6 +46,10 @@ export const Wrapper = styled.div`
       font-size: 16px;
       color: ${colors.gray_1};
       line-height: 1.4;
+      @media (max-width: 900px) {
+        margin: 20px 0 0;
+        text-align: center;
+      }
     }
   }
 `;

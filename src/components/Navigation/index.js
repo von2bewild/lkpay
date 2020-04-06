@@ -30,6 +30,9 @@ function Navigation() {
           <NavLink to="/merchant" activeClassName="selected">
             Merchant
           </NavLink>
+          <NavLink to="/merchant" activeClassName="selected">
+            LKPay Card
+          </NavLink>
           <NavLink to="/local-bankwire" activeClassName="selected">
             Local Bankwire
           </NavLink>

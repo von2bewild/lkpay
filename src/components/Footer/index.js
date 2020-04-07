@@ -9,7 +9,7 @@ function Footer() {
     <S.Wrapper>
       <nav>
         <Link to="/">Contact Us</Link>
-        <Link to="/">Terms & Condition</Link>
+        <Link to="/">Terms & Conditions</Link>
         <Link to="/">Privacy Policy</Link>
         <Link to="/">AML Policy</Link>
         <Link to="/">FAQ</Link>

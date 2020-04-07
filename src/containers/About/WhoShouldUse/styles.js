@@ -4,12 +4,19 @@ import { colors } from 'themes/colors';
 export const Wrapper = styled.div`
   padding: 60px 40px;
   background: ${colors.gray_3};
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   > h2 {
     text-align: center;
     margin: 0 0 20px 0;
     font-size: 30px;
     color: ${colors.navy_blue};
+    line-height: 1.2;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   > h6 {
     text-align: center;
@@ -43,7 +50,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     margin: 30px 0 30px;
     li {
-      padding: 0 15px;
+      padding: 0 10px;
       text-align: center;
       .label {
         font-size: 14px;
@@ -71,6 +78,10 @@ export const Wrapper = styled.div`
         height: 126px;
         border: 1px solid #ddd;
         margin: auto;
+        @media (max-width: 600px) {
+          width: 70px;
+          height: 70px;
+        }
       }
       .arrow {
         width: 220px;
@@ -78,6 +89,9 @@ export const Wrapper = styled.div`
         background: ${colors.sky_blue};
         position: relative;
         display: block;
+        @media (max-width: 600px) {
+          width: 100%;
+        }
 
         &:after {
           position: absolute;
@@ -98,6 +112,9 @@ export const Wrapper = styled.div`
         position: relative;
         display: block;
         margin-top: 20px;
+        @media (max-width: 600px) {
+          width: 100%;
+        }
 
         &:after {
           position: absolute;

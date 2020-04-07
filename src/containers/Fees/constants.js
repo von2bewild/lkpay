@@ -1,18 +1,61 @@
 import React from 'react';
-import { Table } from 'antd';
 
+import us from 'assets/flags/us.svg';
 import au from 'assets/flags/au.svg';
 import ca from 'assets/flags/ca.svg';
 import cn from 'assets/flags/cn.svg';
+import hk from 'assets/flags/hk.svg';
 import id from 'assets/flags/id.svg';
 import jp from 'assets/flags/jp.svg';
 import my from 'assets/flags/my.svg';
 import ph from 'assets/flags/ph.svg';
 import sg from 'assets/flags/sg.svg';
+import kr from 'assets/flags/kr.svg';
 
-import * as S from './styles';
+export const CURRENCIES = [
+  {
+    currency: 'USD',
+    flag: us,
+  },
+  {
+    currency: 'AUD',
+    flag: au,
+  },
+  {
+    currency: 'CAD',
+    flag: ca,
+  },
+  {
+    currency: 'CNY',
+    flag: cn,
+  },
+  {
+    currency: 'HKD',
+    flag: hk,
+  },
+  {
+    currency: 'IDR',
+    flag: id,
+  },
+  {
+    currency: 'JPY',
+    flag: jp,
+  },
+  {
+    currency: 'MYR',
+    flag: my,
+  },
+  {
+    currency: 'PHP',
+    flag: ph,
+  },
+  {
+    currency: 'SGD',
+    flag: sg,
+  },
+];
 
-const DATA_SOURCE = [
+export const DATA_COUNTRIES_MONEY_OUT = [
   {
     key: '1',
     country: 'Philippines',
@@ -37,6 +80,17 @@ const DATA_SOURCE = [
   },
   {
     key: '3',
+    country: 'South Korea',
+    method: 'Local Bank Wire',
+    currency: 'KRW',
+    fees: '₩ 4,000 + 1.5%',
+    limitMax: 'MAX ₩ 5,500,000',
+    limitMin: 'MIN ₩ 13,000',
+    period: '1 to 2 business day',
+    flag: kr,
+  },
+  {
+    key: '4',
     country: 'Indonesia',
     method: 'Local Bank Wire',
     currency: 'IDR',
@@ -47,7 +101,7 @@ const DATA_SOURCE = [
     flag: id,
   },
   {
-    key: '4',
+    key: '5',
     country: 'Malaysia',
     method: 'Local Bank Wire',
     currency: 'MYR',
@@ -58,7 +112,7 @@ const DATA_SOURCE = [
     flag: my,
   },
   {
-    key: '5',
+    key: '6',
     country: 'Singapore',
     method: 'Local Bank Wire',
     currency: 'SGD',
@@ -69,7 +123,7 @@ const DATA_SOURCE = [
     flag: sg,
   },
   {
-    key: '6',
+    key: '7',
     country: 'China',
     method: 'Local Bank Wire',
     currency: 'CNY',
@@ -80,7 +134,7 @@ const DATA_SOURCE = [
     flag: cn,
   },
   {
-    key: '7',
+    key: '8',
     country: 'Australia',
     method: 'Local Bank Wire',
     currency: 'AUD',
@@ -91,7 +145,7 @@ const DATA_SOURCE = [
     flag: au,
   },
   {
-    key: '8',
+    key: '9',
     country: 'Canada',
     method: 'Local Bank Wire',
     currency: 'CAD',
@@ -103,14 +157,50 @@ const DATA_SOURCE = [
   },
 ];
 
-const COLUMNS = [
+export const DATA_COUNTRIES_MONEY_IN = [
+  {
+    key: '1',
+    country: 'Japan',
+    method: 'Local Bank Wire',
+    currency: 'JPY',
+    fees: '2%',
+    limitMax: 'MAX ¥ 1,000,000',
+    limitMin: 'MIN ¥ 5,000',
+    period: 'Half business day',
+    flag: jp,
+  },
+  {
+    key: '2',
+    country: 'South Korea',
+    method: 'Local Bank Wire',
+    currency: 'KLW',
+    fees: '₩ 5,000 + 2%',
+    limitMax: 'MAX ₩ 5,500,000',
+    limitMin: 'MIN ₩ 13,000',
+    period: '1 hour',
+    flag: kr,
+  },
+  {
+    key: '3',
+    country: 'China',
+    method: 'Local Bank Wire',
+    currency: 'CNY',
+    fees: '1.5%',
+    limitMax: 'MAX CN¥ 30,000.00',
+    limitMin: 'MIN CN¥ 200.00',
+    period: '1 hour',
+    flag: cn,
+  },
+];
+
+export const COLUMNS_COUNTRIES = [
   {
     title: 'Country',
     dataIndex: 'country',
     key: 'country',
     render: (text, data) => (
       <div className="country">
-        <img src={data.flag} alt=""/>
+        <img src={data.flag} alt="" />
         <p>{text}</p>
       </div>
     ),
@@ -147,45 +237,3 @@ const COLUMNS = [
     key: 'period',
   },
 ];
-
-function Advantages() {
-  return (
-    <S.Wrapper>
-      <h2>Can you explain the advantages of using LKPay local ?</h2>
-      <h6>
-        Unless it’s a local bank transfer, sending money takes 2-3 days
-        categorised by the withdrawing bank as international transfers.
-      </h6>
-      <ul>
-        <li>
-          <img src="" alt="" />
-          <p className="label">Your local bank account</p>
-        </li>
-        <li>
-          <p className="label2">Local payout request</p>
-          <span className="arrow" />
-          <span className="arrow2" />
-          <p className="label2">Bank to bank transfer</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p className="label">LKPay enabled local bank</p>
-        </li>
-      </ul>
-
-      <h5>
-        LKPay has pioneered the local payout using local banks. Local payout
-        service is currently available in over 7 countries worldwide. However,
-        we’re actively expanding to many more markets to keep up with the
-        demands. The countries (ex: Philippines, japan, south Korea, Indonesia
-        etc.) are where you can use LKPay local payout services today.
-      </h5>
-
-      <S.TableWrapper>
-        <Table dataSource={DATA_SOURCE} columns={COLUMNS} pagination={false} />
-      </S.TableWrapper>
-    </S.Wrapper>
-  );
-}
-
-export default Advantages;

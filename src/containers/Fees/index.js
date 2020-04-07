@@ -1,9 +1,15 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
+
+import Footer from 'components/Footer';
+import Header from './Header';
+import Grid from './Grid';
 
 function Fees() {
   return (
     <Fragment>
-      <h1>Fees</h1>
+      <Header />
+      <Grid />
+      <Footer />
     </Fragment>
   );
 }

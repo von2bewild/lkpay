@@ -4,12 +4,19 @@ import { colors } from 'themes/colors';
 export const Wrapper = styled.div`
   padding: 60px 40px;
   background: ${colors.gray_3};
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   > h2 {
     text-align: center;
     margin: 0 0 20px 0;
     font-size: 30px;
+    line-height: 1.2;
     color: ${colors.navy_blue};
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   > h6 {
     text-align: center;
@@ -56,7 +63,12 @@ export const Wrapper = styled.div`
     padding: 30px 50px;
     max-width: 700px;
     border: 1px solid ${colors.gray_4};
-
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    @media (max-width: 600px) {
+    padding: 30px 20px;
+    }
     > h4 {
       font-size: 18px;
       line-height: 1.4;
@@ -65,6 +77,10 @@ export const Wrapper = styled.div`
       max-width: 300px;
       font-weight: 700;
       text-align: center;
+      margin: 0 10px 0 0;
+      @media (max-width: 900px) {
+        margin: 0 0 10px 0;
+      }
     }
     article {
       display: flex;

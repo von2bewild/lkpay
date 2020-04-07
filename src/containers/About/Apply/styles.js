@@ -3,12 +3,19 @@ import { colors } from 'themes/colors';
 
 export const Wrapper = styled.div`
   padding: 60px 40px;
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   > h2 {
     text-align: center;
     margin: 0 0 20px 0;
     font-size: 30px;
     color: ${colors.navy_blue};
+    line-height: 1.2;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   > h6 {
     text-align: center;

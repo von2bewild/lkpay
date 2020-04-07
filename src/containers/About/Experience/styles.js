@@ -5,12 +5,19 @@ import quoteRight from 'assets/icon-quote-right.svg';
 
 export const Wrapper = styled.div`
   padding: 60px 40px;
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   > h2 {
     text-align: center;
     margin: 0 0 20px 0;
     font-size: 30px;
     color: ${colors.navy_blue};
+    line-height: 1.2;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   > h5 {
     text-align: center;
@@ -20,12 +27,20 @@ export const Wrapper = styled.div`
     color: ${colors.gray_2};
     line-height: 1.4;
     font-weight: 400;
+    @media (max-width: 900px) {
+      margin: 0 auto;
+    }
   }
   > section {
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
     margin: 80px auto 60px;
+    @media (max-width: 900px) {
+      justify-content: center;
+      flex-direction: column;
+      margin: 80px auto 0;
+    }
   }
   > ul {
     display: flex;
@@ -33,10 +48,22 @@ export const Wrapper = styled.div`
     width: 100%;
     margin: 40px auto;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
+
     li {
       flex: 0 0 23%;
       text-align: center;
       padding: 0 10px;
+      @media (max-width: 900px) {
+        flex: 0 0 47%;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 600px) {
+        flex: 0 0 100%;
+      }
 
       img {
         width: 32px;
@@ -62,6 +89,9 @@ export const Testimonial = styled.div`
   padding: 80px 25px;
   flex: 0 0 32%;
   position: relative;
+  @media (max-width: 900px) {
+    margin-bottom: 70px;
+  }
 
   p {
     font-size: 14px;

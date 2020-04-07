@@ -7,12 +7,16 @@ export const Wrapper = styled.div`
   width: 100%;
   margin: auto;
   background: ${colors.gray_3};
+  @media (max-width: 600px) {
+    padding: 40px 20px 60px;
+  }
 
   h2 {
     letter-spacing: -0.8px;
     margin-bottom: 40px;
     color: ${colors.navy_blue};
     font-size: 40px;
+    line-height: 1.2;
     @media (max-width: 600px) {
       font-size: 28px;
     }

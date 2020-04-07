@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   width: 100%;
   margin: auto;
   text-align: center;
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   h1 {
     font-size: 36px;
@@ -17,6 +20,9 @@ export const Wrapper = styled.div`
     letter-spacing: 1px;
     word-spacing: 10px;
     margin-top: 0;
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
   }
   h5 {
     font-size: 15px;
@@ -30,6 +36,9 @@ export const Wrapper = styled.div`
     max-width: 600px;
     margin: 70px auto 0;
     line-height: 1.4;
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
   ul {
     display: flex;
@@ -37,12 +46,15 @@ export const Wrapper = styled.div`
     justify-content: center;
     margin: 50px 0 30px;
     li {
-      padding: 0 15px;
+      padding: 0 10px;
 
       .person-img {
         width: 130px;
         display: block;
         margin: auto;
+        @media (max-width: 600px) {
+          width: 70px;
+        }
       }
       .money-icon {
         width: 50px;
@@ -67,7 +79,9 @@ export const Wrapper = styled.div`
         background: ${colors.sky_blue};
         position: relative;
         display: block;
-
+        @media (max-width: 600px) {
+          width: 100%;
+        }
         &:after {
           position: absolute;
           content: '';
@@ -96,8 +110,11 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     max-width: 1000px;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -106,6 +123,11 @@ export const Grid = styled.div`
   border: 1px solid ${colors.gray_4};
   flex: 0 0 48%;
   color: ${colors.navy_blue};
+  @media (max-width: 900px) {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
 
   > header {
     padding: 25px;

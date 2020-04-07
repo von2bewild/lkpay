@@ -135,3 +135,55 @@ export const NavButton = styled.button`
     height: 100%;
   }
 `;
+
+export const MobileNav = styled.div`
+  width: 100%;
+  padding: 70px 15px 15px;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
+  text-align: center;
+  border: 1px solid ${colors.gray_4};
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  a {
+    display: block;
+    color: ${colors.dark_1};
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  a.selected {
+    font-weight: 700;
+    color: ${colors.sky_blue};
+  }
+  footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .btn {
+    border: 1px solid ${colors.navy_blue};
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    flex: 0 0 48%;
+
+    &:hover {
+      background: ${colors.navy_blue};
+      color: #fff;
+    }
+  }
+`;

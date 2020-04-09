@@ -1,12 +1,17 @@
 import React, {Fragment} from 'react';
 
 import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
+import Header from './Header';
+import Fees from './Fees';
 
 function Merchant() {
   return (
     <Fragment>
       <Navigation />
-      <h1>Merchant</h1>
+      <Header />
+      <Fees />
+      <Footer />
     </Fragment>
   );
 }

@@ -76,7 +76,7 @@ function WhoShouldUse() {
           </p>
           <span className="arrow" />
           <span className="arrow2" />
-          <p className="label2">Pay with STICPAY internationally</p>
+          <p className="label2">Pay with LKPay internationally</p>
           <small>
             Receive payments from the Chinese merchants selling Korean
             goods/services in China instantly.

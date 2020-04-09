@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
     @media (max-width: 1200px) {
       padding: 0 20px;
       height: 55px;

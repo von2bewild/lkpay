@@ -4,6 +4,9 @@ import { colors } from 'themes/colors';
 export const Wrapper = styled.div`
   text-align: center;
   padding: 60px 40px;
+  @media (max-width: 600px) {
+    padding: 40px 10px;
+  }
 
   h2 {
     font-size: 45px;

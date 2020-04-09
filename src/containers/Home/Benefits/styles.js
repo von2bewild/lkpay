@@ -39,6 +39,9 @@ export const Wrapper = styled.div`
         margin-bottom: 50px;
         display: flex;
         align-items: center;
+        @media (max-width: 600px) {
+          margin-bottom: 20px;
+        }
       }
       li:last-child {
         margin-bottom: 0;

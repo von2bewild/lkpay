@@ -12,6 +12,16 @@ import ph from 'assets/flags/ph.svg';
 import sg from 'assets/flags/sg.svg';
 import kr from 'assets/flags/kr.svg';
 
+import bankwireInt from 'assets/banks/bankwire-int.svg';
+import bankwireLoc from 'assets/banks/bankwire-loc.svg';
+import bitcoin from 'assets/banks/bitcoin.svg';
+import ethereum from 'assets/banks/ethereum.svg';
+import litecoin from 'assets/banks/litecoin.svg';
+import mastercard from 'assets/banks/mastercard.svg';
+import unionpay from 'assets/banks/unionpay.svg';
+import visa from 'assets/banks/visa.svg';
+import lkcard from 'assets/logo.png';
+
 export const CURRENCIES = [
   {
     currency: 'USD',
@@ -236,4 +246,78 @@ export const COLUMNS_COUNTRIES = [
     dataIndex: 'period',
     key: 'period',
   },
+];
+
+export const MONEY_IN = [
+  {
+    bank: bankwireInt,
+    fee: '1%',
+  },
+  {
+    bank: bankwireLoc,
+    fee: '2%',
+    note: 'Fees are different for each country please check the table below.',
+  },
+  {
+    bank: mastercard,
+    fee: '3.85%',
+  },
+  {
+    bank: unionpay,
+    fee: '1.5%',
+  },
+  {
+    bank: visa,
+    fee: '3.85%',
+  },
+  {
+    bank: bitcoin,
+    fee: '1%',
+  },
+  {
+    bank: litecoin,
+    fee: '1%',
+  },
+  {
+    bank: ethereum,
+    fee: '1%',
+  },
+];
+
+export const MONEY_OUT = [
+  {
+    bank: bankwireInt,
+    fee: '1%',
+    note: 'Bank fees will be charged',
+  },
+  {
+    bank: bankwireLoc,
+    note: 'Fees are different for each country please check the table below.',
+  },
+  {
+    bank: unionpay,
+    fee: '1.5%',
+  },
+  {
+    bank: lkcard,
+    fee: '1.3%',
+  },
+  {
+    bank: bitcoin,
+    fee: '1%',
+  },
+  {
+    bank: litecoin,
+    fee: '1%',
+  },
+  {
+    bank: ethereum,
+    fee: '1%',
+  },
+];
+
+export const INTERNAL_TRANSFER = [
+  { name: 'Client to Merchant', fee: '2.5% + $0.3', currency: 'fiat' },
+  { name: 'Client to Merchant', fee: '1.8%', currency: 'crypto' },
+  { name: 'Client to Merchant', fee: '1% (cap $35)' },
 ];

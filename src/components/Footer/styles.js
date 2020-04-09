@@ -4,6 +4,9 @@ import { colors } from 'themes/colors';
 export const Wrapper = styled.div`
   background: #f4f4f4;
   padding: 60px 40px;
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   > nav {
     text-align: center;

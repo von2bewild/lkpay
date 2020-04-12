@@ -61,9 +61,6 @@ export const Wrapper = styled.div`
         flex: 0 0 47%;
         margin-bottom: 20px;
       }
-      @media (max-width: 600px) {
-        flex: 0 0 100%;
-      }
 
       img {
         width: 32px;
@@ -76,6 +73,9 @@ export const Wrapper = styled.div`
         font-size: 16px;
         color: ${colors.dark_1};
         margin: 0;
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
       }
       strong {
         color: ${colors.navy_blue};

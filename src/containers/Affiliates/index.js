@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 
 import * as S from './styles';
@@ -8,7 +7,6 @@ import * as S from './styles';
 function Affiliates() {
   return (
     <Fragment>
-      <Navigation />
       <S.Wrapper>
         <article>
           <small>LKPay Affiliate Partnership</small>

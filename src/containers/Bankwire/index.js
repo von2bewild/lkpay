@@ -1,12 +1,20 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 
-import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
+
+import Header from './Header';
+import Benefits from './Benefits';
+import Countries from './Countries';
+import Deposits from './Deposits';
 
 function Bankwire() {
   return (
     <Fragment>
-      <Navigation />
-      <h1>Bankwire</h1>
+      <Header />
+      <Benefits />
+      <Countries />
+      <Deposits />
+      <Footer />
     </Fragment>
   );
 }

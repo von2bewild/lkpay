@@ -41,7 +41,7 @@ function Header() {
       </ul>
       <h5>
         LKPay partnered with Unionpay’s Prepaid card services. It allows you
-        to use your Stic card in all over the world for ATM withdrawlas, offline
+        to use your LKPay card in all over the world for ATM withdrawlas, offline
         purchases that accept Unionpay.
         <br />
         You can use up to HKD15,000 ($2,000)a day for offline purchases and

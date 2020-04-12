@@ -12,6 +12,8 @@ import Bankwire from 'containers/Bankwire/Loadable';
 import Affiliates from 'containers/Affiliates/Loadable';
 import News from 'containers/News/Loadable';
 import Support from 'containers/Support/Loadable';
+import Login from 'containers/Login/Loadable';
+import Signup from 'containers/Signup/Loadable';
 
 function App() {
   return (
@@ -20,36 +22,18 @@ function App() {
         <Navigation />
         <Wrapper>
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/home">
-              <Home />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/fees">
-              <Fees />
-            </Route>
-            <Route exact path="/merchant">
-              <Merchant />
-            </Route>
-            <Route exact path="/lkpay-card">
-              <Card />
-            </Route>
-            <Route exact path="/local-bankwire">
-              <Bankwire />
-            </Route>
-            <Route exact path="/affiliates">
-              <Affiliates />
-            </Route>
-            <Route exact path="/news">
-              <News />
-            </Route>
-            <Route exact path="/support">
-              <Support />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/fees" component={Fees} />
+            <Route exact path="/merchant" component={Merchant} />
+            <Route exact path="/lkpay-card" component={Card} />
+            <Route exact path="/local-bankwire" component={Bankwire} />
+            <Route exact path="/affiliates" component={Affiliates} />
+            <Route exact path="/news" component={News} />
+            <Route exact path="/support" component={Support} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/sign-up" component={Signup} />
           </Switch>
         </Wrapper>
       </div>

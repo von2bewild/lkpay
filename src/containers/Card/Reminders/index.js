@@ -52,9 +52,9 @@ function Reminders() {
           <article>
             <h3>3. CHECK YOUR CARD STATUS</h3>
             <p>
-              You can check your application status in Mypage-LKPaypay
-              card-Status during the 2-3 week process. Once status changes to
-              “shipped”, you can track the delivery online.
+              You can check your application status in Mypage-LKPay card-Status
+              during the 2-3 week process. Once status changes to “shipped”, you
+              can track the delivery online.
             </p>
           </article>
         </li>

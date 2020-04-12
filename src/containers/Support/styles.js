@@ -6,47 +6,6 @@ export const Wrapper = styled.div`
   @media (max-width: 600px) {
     padding: 40px 20px;
   }
-
-  ul {
-    display: flex;
-    max-width: 1000px;
-    width: 100%;
-    margin: 60px auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @media (max-width: 900px) {
-      justify-content: center;
-    }
-
-    li {
-      flex: 0 0 23%;
-      text-align: center;
-      padding: 0 10px;
-      @media (max-width: 900px) {
-        flex: 0 0 47%;
-        margin-bottom: 20px;
-      }
-      @media (max-width: 600px) {
-        flex: 0 0 100%;
-      }
-
-      img {
-        width: 32px;
-        height: 32px;
-        border: 1px solid ${colors.gray_4};
-        margin: 0 auto 10px;
-        display: block;
-      }
-      p {
-        font-size: 16px;
-        color: ${colors.dark_1};
-        margin: 0;
-      }
-      strong {
-        color: ${colors.navy_blue};
-      }
-    }
-  }
 `;
 
 export const Tabs = styled.div`
@@ -59,7 +18,7 @@ export const Tabs = styled.div`
     align-items: center;
 
     button {
-      font-weight: 16px;
+      font-size: 16px;
       font-weight: 900;
       padding: 10px 0;
       width: 100%;
@@ -70,6 +29,9 @@ export const Tabs = styled.div`
       border: none;
       border-bottom: 5px solid ${colors.gray_4};
       cursor: pointer;
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
     }
     button.active {
       color: ${colors.sky_blue};
@@ -85,5 +47,49 @@ export const TabContent = styled.div`
 
   &.active {
     display: block;
+  }
+`;
+
+export const SupportList = styled.ul`
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin: 60px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    margin: 30px auto 0;
+  }
+
+  li {
+    flex: 0 0 23%;
+    text-align: center;
+    padding: 0 10px;
+    @media (max-width: 900px) {
+      flex: 0 0 47%;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      border: 1px solid ${colors.gray_4};
+      margin: 0 auto 10px;
+      display: block;
+    }
+    p {
+      font-size: 16px;
+      color: ${colors.dark_1};
+      margin: 0;
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
+    }
+    strong {
+      color: ${colors.navy_blue};
+    }
   }
 `;

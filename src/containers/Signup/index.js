@@ -1,17 +1,14 @@
 import React, { Fragment } from 'react';
 
 import Footer from 'components/Footer';
-import Header from './Header';
-import Fees from './Fees';
 
-function Merchant() {
+function Signup() {
   return (
     <Fragment>
-      <Header />
-      <Fees />
+      <h1>Register</h1>
       <Footer />
     </Fragment>
   );
 }
 
-export default Merchant;
+export default Signup;

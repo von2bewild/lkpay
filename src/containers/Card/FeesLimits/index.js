@@ -86,7 +86,7 @@ const DATA_FEES = [
   {
     key: '6',
     type: 'Account Management Fee',
-    fee: 'HKD 10 / month from 13th month of issuance of STIC card',
+    fee: 'HKD 10 / month from 13th month of issuance of LKPay card',
   },
   {
     key: '7',
@@ -179,12 +179,12 @@ function FeesLimits() {
       <article>
         <h6>* Currency exchange rate will be determine by Card Issuer.</h6>
         <h6>
-          * STIC Card is available to use for 2 years after initial activation,
+          * LKPay Card is available to use for 2 years after initial activation,
           and you must renew the card after expiration. For renewal card, please
           contact to lkpay_card@lkpay.com
         </h6>
         <h6>
-          * 10 HKD/mo management fees will be assessed for STIC card holders if
+          * 10 HKD/mo management fees will be assessed for LKPay card holders if
           the account is inactive for over 6 months.
         </h6>
         <h6>
@@ -199,13 +199,11 @@ function FeesLimits() {
         LKPay at all
       </h5>
       <section>
-        <aside>
-          <Table
-            dataSource={DATA_BANNED_COUNTRIES}
-            columns={COLUMN_BANNED_COUNTRIES}
-            pagination={false}
-          />
-        </aside>
+        <Table
+          dataSource={DATA_BANNED_COUNTRIES}
+          columns={COLUMN_BANNED_COUNTRIES}
+          pagination={false}
+        />
       </section>
     </S.Wrapper>
   );

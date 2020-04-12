@@ -13,7 +13,7 @@ function Charge() {
             <br /> CHARGE
           </h5>
           <p>
-            “MY PAGE - STIC CARD -TRANSFER FUNDS” APPLY FOR TRANSFER (MINIMUM
+            “MY PAGE - LKPAY CARD -TRANSFER FUNDS” APPLY FOR TRANSFER (MINIMUM
             HKD 500)
           </p>
           <small>
@@ -53,7 +53,7 @@ function Charge() {
         <li>
           <h5>STEP 1. CHARGE</h5>
           <p>
-            “MY PAGE - STIC CARD -TRANSFER FUNDS” APPLY FOR TRANSFER (MINIMUM
+            “MY PAGE - LKPAY CARD -TRANSFER FUNDS” APPLY FOR TRANSFER (MINIMUM
             HKD 500)
           </p>
           <small>APPROVAL FOR CHARGING (1 BUSINESS DAY)</small>

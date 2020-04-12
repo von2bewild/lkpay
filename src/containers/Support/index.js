@@ -1,9 +1,10 @@
 import React, { useState, Fragment } from 'react';
 import classNames from 'classnames';
 
-import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
+
 import GetInTouch from './GetInTouch';
+import Faq from './Faq';
 
 import * as S from './styles';
 
@@ -11,7 +12,6 @@ function Support() {
   const [selectedTab, setSelectedTab] = useState('customer');
   return (
     <Fragment>
-      <Navigation />
       <S.Wrapper>
         <S.Tabs>
           <nav>
@@ -33,7 +33,7 @@ function Support() {
             </button>
           </nav>
         </S.Tabs>
-        <ul>
+        <S.SupportList>
           <li>
             <img src="" alt="" />
             <p>
@@ -62,7 +62,7 @@ function Support() {
             </p>
             <p>affiliate@lkpay.com</p>
           </li>
-        </ul>
+        </S.SupportList>
         <S.TabContent
           className={classNames({
             active: selectedTab === 'customer',
@@ -75,7 +75,7 @@ function Support() {
             active: selectedTab === 'faq',
           })}
         >
-          boom boom
+          <Faq />
         </S.TabContent>
       </S.Wrapper>
       <Footer />

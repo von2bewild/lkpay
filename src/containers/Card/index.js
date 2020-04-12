@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 
-import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 
 import Header from './Header';
@@ -14,7 +13,6 @@ import FeesLimits from './FeesLimits';
 function Card() {
   return (
     <Fragment>
-      <Navigation />
       <Header />
       <Why />
       <Easy />

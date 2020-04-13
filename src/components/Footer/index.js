@@ -8,11 +8,11 @@ function Footer() {
   return (
     <S.Wrapper>
       <nav>
-        <Link to="/">Contact Us</Link>
+        <Link to="/support/">Contact Us</Link>
         <Link to="/">Terms & Conditions</Link>
         <Link to="/">Privacy Policy</Link>
         <Link to="/">AML Policy</Link>
-        <Link to="/">FAQ</Link>
+        <Link to="/support/faq">FAQ</Link>
       </nav>
       <footer>
         <img src={logo} alt="" />

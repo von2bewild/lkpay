@@ -31,7 +31,7 @@ function App() {
             <Route exact path="/local-bankwire" component={Bankwire} />
             <Route exact path="/affiliates" component={Affiliates} />
             <Route exact path="/news" component={News} />
-            <Route exact path="/support" component={Support} />
+            <Route path="/support" component={Support} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/sign-up" component={Signup} />
           </Switch>

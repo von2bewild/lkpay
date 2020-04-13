@@ -1,5 +1,7 @@
-import React, { useState, Fragment } from 'react';
-import classNames from 'classnames';
+import React, { Fragment } from 'react';
+
+// import { withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 
 import Footer from 'components/Footer';
 
@@ -9,28 +11,13 @@ import Faq from './Faq';
 import * as S from './styles';
 
 function Support() {
-  const [selectedTab, setSelectedTab] = useState('customer');
   return (
     <Fragment>
       <S.Wrapper>
         <S.Tabs>
           <nav>
-            <button
-              className={classNames({
-                active: selectedTab === 'customer',
-              })}
-              onClick={() => setSelectedTab('customer')}
-            >
-              customer service
-            </button>
-            <button
-              className={classNames({
-                active: selectedTab === 'faq',
-              })}
-              onClick={() => setSelectedTab('faq')}
-            >
-              faq
-            </button>
+            <NavLink to="/support/customer-service" activeClassName="active">customer service</NavLink>
+            <NavLink to="/support/faq" activeClassName="active">faq</NavLink>
           </nav>
         </S.Tabs>
         <S.SupportList>
@@ -63,20 +50,11 @@ function Support() {
             <p>affiliate@lkpay.com</p>
           </li>
         </S.SupportList>
-        <S.TabContent
-          className={classNames({
-            active: selectedTab === 'customer',
-          })}
-        >
-          <GetInTouch />
-        </S.TabContent>
-        <S.TabContent
-          className={classNames({
-            active: selectedTab === 'faq',
-          })}
-        >
-          <Faq />
-        </S.TabContent>
+        <Switch>
+          <Route exact path="/support/customer-service" component={GetInTouch} />
+          <Route exact path="/support/faq" component={Faq} />
+          <Redirect from="/support" to="/support/customer-service" />
+        </Switch>
       </S.Wrapper>
       <Footer />
     </Fragment>

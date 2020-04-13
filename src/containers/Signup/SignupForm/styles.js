@@ -2,26 +2,40 @@ import styled from 'styled-components';
 import { colors } from 'themes/colors';
 
 export const Wrapper = styled.div`
-  margin: 40px auto;
-  max-width: 1000px;
+  padding: 40px 20px;
 
   > header {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0 0 20px;
     border-bottom: 1px solid ${colors.gray_4};
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    h3 {
+
+    h4 {
       font-size: 30px;
       font-weight: 700;
-      text-transform: uppercase;
-      margin: 0;
-      @media (max-width: 600px) {
-        font-size: 24px;
-      }
     }
     p {
-      font-size: 16px;
-      max-width: 600px;
-      margin: 0;
+      margin: 0 0 5px;
+    }
+  }
+  > section {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+  }
+  .ant-picker {
+    width: 100%;
+  }
+  > footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid ${colors.gray_4};
+    border-top: 1px solid ${colors.gray_4};
+    p {
+      margin: 0 0 5px;
     }
   }
 `;

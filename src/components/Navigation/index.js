@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 import DefaultNav from './DefaultNav';
-import AuthNav from './AuthNav';
+// import AuthNav from './AuthNav';
 
 function Navigation({ location: { pathname } }) {
   // const renderNav = () => {

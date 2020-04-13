@@ -17,7 +17,7 @@ export const Tabs = styled.div`
     display: flex;
     align-items: center;
 
-    button {
+    a {
       font-size: 16px;
       font-weight: 900;
       padding: 10px 0;
@@ -33,7 +33,7 @@ export const Tabs = styled.div`
         font-size: 12px;
       }
     }
-    button.active {
+    a.active {
       color: ${colors.sky_blue};
       border-bottom: 5px solid ${colors.sky_blue};
     }

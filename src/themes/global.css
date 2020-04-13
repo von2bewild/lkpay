@@ -21,3 +21,6 @@ a {
 .app {
   overflow: hidden;
 }
+button {
+  cursor: pointer;
+}

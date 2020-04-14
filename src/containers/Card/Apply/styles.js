@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   }
 
   > header {
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     margin: 60px auto;
     display: flex;
@@ -47,10 +47,8 @@ export const Wrapper = styled.div`
 
       > img {
         width: 100px;
-        height: 122px;
         display: block;
         margin: auto;
-        border: 1px solid ${colors.gray_4};
       }
       > h3 {
         font-size: 18px;
@@ -149,7 +147,6 @@ export const Wrapper = styled.div`
     height: 130px;
     display: block;
     margin: auto;
-    border: 1px solid ${colors.gray_4};
     @media (max-width: 900px) {
       width: 70px;
       height: 70px;

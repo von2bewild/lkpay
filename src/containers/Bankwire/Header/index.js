@@ -53,12 +53,14 @@ function Header() {
         <ul>
           <li>
             <img src={bankLoc} alt="" className="account" />
+            <h6>LKPay Partner Local Bank</h6>
           </li>
           <li className="arrow-item">
             <span className="arrow" />
           </li>
           <li>
             <img src={accountLoc} alt="" className="account" />
+            <h6>Customer’s Local Bank Account</h6>
           </li>
         </ul>
         <h3>Local Bank Wire</h3>

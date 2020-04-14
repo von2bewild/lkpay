@@ -1,6 +1,13 @@
 import React from 'react';
 import hk from 'assets/flags/hk.svg';
 import jp from 'assets/flags/jp.svg';
+import imgPerson1 from 'assets/img-person-quote-1.png';
+import imgPerson2 from 'assets/img-person-quote-2.png';
+import imgPerson3 from 'assets/img-person-quote-3.png';
+import iconInquiry1 from 'assets/icon-inquiry-general.svg';
+import iconInquiry2 from 'assets/icon-inquiry-funds.svg';
+import iconInquiry3 from 'assets/icon-inquiry-merchant.svg';
+import iconInquiry4 from 'assets/icon-inquiry-affiliates.svg';
 
 import * as S from './styles';
 
@@ -11,7 +18,7 @@ function Component() {
       <section>
         <S.Testimonial>
           <figure>
-            <img src="" alt="" />
+            <img src={imgPerson1} alt="" />
           </figure>
           <p>
             “I use to send money to my parents abroad. Without , sending money
@@ -25,7 +32,7 @@ function Component() {
         </S.Testimonial>
         <S.Testimonial>
           <figure>
-            <img src="" alt="" />
+            <img src={imgPerson2} alt="" />
           </figure>
           <p>
             “Unless I convert to major currencies ($ or Euro), exchange fees
@@ -40,7 +47,7 @@ function Component() {
         </S.Testimonial>
         <S.Testimonial>
           <figure>
-            <img src="" alt="" />
+            <img src={imgPerson3} alt="" />
           </figure>
           <p>
             “I use LKPay for my FX margin trading account. Now, I don’t have to
@@ -60,22 +67,22 @@ function Component() {
       </h5>
       <ul>
         <li>
-          <img src="" alt=""/>
+          <img src={iconInquiry1} alt=""/>
           <p><strong>Account, General Inquiry</strong></p>
           <p>account@lkpay.com</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <img src={iconInquiry2} alt=""/>
           <p><strong>Funds Inquiry</strong></p>
           <p>funds@lkpay.com</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <img src={iconInquiry3} alt=""/>
           <p><strong>Merchant Inquiry</strong></p>
           <p>merchant@lkpay.com</p>
         </li>
         <li>
-          <img src="" alt=""/>
+          <img src={iconInquiry4} alt=""/>
           <p><strong>Affiliates Inquiry</strong></p>
           <p>affiliate@lkpay.com</p>
         </li>

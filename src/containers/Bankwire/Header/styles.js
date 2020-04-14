@@ -122,6 +122,9 @@ export const Wrapper = styled.div`
           height: 70px;
         }
       }
+      h6 {
+        margin-top: 5px;
+      }
     }
   }
 

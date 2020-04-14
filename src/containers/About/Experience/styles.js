@@ -65,7 +65,6 @@ export const Wrapper = styled.div`
       img {
         width: 32px;
         height: 32px;
-        border: 1px solid ${colors.gray_4};
         margin: 0 auto 10px;
         display: block;
       }
@@ -130,6 +129,12 @@ export const Testimonial = styled.div`
     border-radius: 50%;
     border: 2px solid ${colors.gray_4};
     background: ${colors.gray_3};
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   .flag {
     width: 50px;

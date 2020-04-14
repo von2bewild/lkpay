@@ -90,7 +90,6 @@ export const Wrapper = styled.div`
     height: 130px;
     display: block;
     margin: auto;
-    border: 1px solid ${colors.gray_4};
     @media (max-width: 900px) {
       width: 70px;
       height: 70px;

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { colors } from 'themes/colors';
+import bgHeader from 'assets/bg-card-header.jpg';
 
 export const Wrapper = styled.div`
   padding: 60px 20px;
   text-align: center;
-  background: ${colors.dark_1};
+  background: ${colors.dark_1} url(${bgHeader}) center/cover no-repeat;
 
   h1 {
     font-size: 36px;

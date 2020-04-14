@@ -10,6 +10,9 @@ import my from 'assets/flags/my.svg';
 import ph from 'assets/flags/ph.svg';
 import sg from 'assets/flags/sg.svg';
 
+import imgBankLoc from 'assets/img-bank-loc.svg';
+import imgBankLogo from 'assets/img-bank-logo.svg';
+
 import * as S from './styles';
 
 const DATA_SOURCE = [
@@ -158,7 +161,7 @@ function Advantages() {
       </h6>
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={imgBankLoc} alt="" />
           <p className="label">Your local bank account</p>
         </li>
         <li>
@@ -168,7 +171,7 @@ function Advantages() {
           <p className="label2">Bank to bank transfer</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={imgBankLogo} alt="" />
           <p className="label">LKPay enabled local bank</p>
         </li>
       </ul>

@@ -4,6 +4,13 @@ import classNames from 'classnames';
 import us from 'assets/flags/us.svg';
 import downArrow from 'assets/icon-down-arrow.svg';
 
+import iconMerchant1 from 'assets/icon-merchant-1.png';
+import iconMerchant2 from 'assets/icon-merchant-2.png';
+import iconMerchant3 from 'assets/icon-merchant-3.png';
+import iconMerchant4 from 'assets/icon-merchant-4.png';
+import iconMerchant5 from 'assets/icon-merchant-5.png';
+import iconMerchant6 from 'assets/icon-merchant-6.png';
+
 import { CURRENCIES } from '../constants';
 
 import * as S from './styles';
@@ -157,21 +164,21 @@ function Fees() {
       </ul>
       <footer>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant1} alt="" />
           <p>
             Providing cards available around the world to clients. Comprehensive
             coverage of services for worldwide customers.
           </p>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant2} alt="" />
           <p>
             Various deposit methods and low fees: Deposit directly to LKPay
             via VISA/MASTER, UnionPay or Bitcoin with minimum fee.
           </p>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant3} alt="" />
           <div>
             <p>
               Domestic (local) bank withdrawal option: Clients can withdraw from
@@ -184,18 +191,18 @@ function Fees() {
           </div>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant4} alt="" />
           <p>
             Providing convenient API and easy development documents for
             merchants.
           </p>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant5} alt="" />
           <p>Internal transfers fee 1% & 2.5%+$0.3 customer to merchant.</p>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={iconMerchant6} alt="" />
           <p>Supporting 24-hours customer center for all clients.</p>
         </article>
       </footer>

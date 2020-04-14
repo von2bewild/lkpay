@@ -40,16 +40,6 @@ export const Tabs = styled.div`
   }
 `;
 
-export const TabContent = styled.div`
-  display: none;
-  max-width: 1000px;
-  margin: 30px auto 0;
-
-  &.active {
-    display: block;
-  }
-`;
-
 export const SupportList = styled.ul`
   display: flex;
   max-width: 1000px;

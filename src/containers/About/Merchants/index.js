@@ -1,4 +1,7 @@
 import React from 'react';
+import imgMerchantGuys from 'assets/img-merchant-guys.svg';
+import imgMerchantPage from 'assets/img-merchant-page.svg';
+
 import * as S from './styles';
 
 function Merchants() {
@@ -17,7 +20,7 @@ function Merchants() {
       <h5>“Process deposit / withdrawal in less than a minute”</h5>
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={imgMerchantGuys} alt="" />
           <p className="label">LKPay Users</p>
         </li>
         <li>
@@ -27,7 +30,7 @@ function Merchants() {
           <p className="label2">LKPay Merchant service providers</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={imgMerchantPage} alt="" />
           <p className="label">LKPay Merchant service providers</p>
         </li>
       </ul>

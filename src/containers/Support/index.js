@@ -1,9 +1,13 @@
 import React, { Fragment } from 'react';
 
-// import { withRouter } from 'react-router-dom';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 
 import Footer from 'components/Footer';
+
+import iconInquiry1 from 'assets/icon-inquiry-general.svg';
+import iconInquiry2 from 'assets/icon-inquiry-funds.svg';
+import iconInquiry3 from 'assets/icon-inquiry-merchant.svg';
+import iconInquiry4 from 'assets/icon-inquiry-affiliates.svg';
 
 import GetInTouch from './GetInTouch';
 import Faq from './Faq';
@@ -22,28 +26,28 @@ function Support() {
         </S.Tabs>
         <S.SupportList>
           <li>
-            <img src="" alt="" />
+            <img src={iconInquiry1} alt="" />
             <p>
               <strong>Account, General Inquiry</strong>
             </p>
             <p>account@lkpay.com</p>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src={iconInquiry2} alt="" />
             <p>
               <strong>Funds Inquiry</strong>
             </p>
             <p>funds@lkpay.com</p>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src={iconInquiry3} alt="" />
             <p>
               <strong>Merchant Inquiry</strong>
             </p>
             <p>merchant@lkpay.com</p>
           </li>
           <li>
-            <img src="" alt="" />
+            <img src={iconInquiry4} alt="" />
             <p>
               <strong>Affiliates Inquiry</strong>
             </p>

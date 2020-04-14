@@ -1,6 +1,7 @@
 import React from 'react';
 
 import bankLoc from 'assets/img-bank-loc.svg';
+import bankLogo from 'assets/img-bank-logo.svg';
 import person from 'assets/img-person-jp.png';
 
 import * as S from './styles';
@@ -18,7 +19,7 @@ function Benefits() {
       </h6>
       <ul>
         <li>
-          <img src={bankLoc} alt="" />
+          <img src={bankLogo} alt="" />
           <h5>LKPay’s Japanese Partner Bank Account</h5>
         </li>
         <li className="arrow-item">

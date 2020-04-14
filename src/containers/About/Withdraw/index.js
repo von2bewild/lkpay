@@ -1,5 +1,7 @@
 import React from 'react';
 import check from 'assets/icon-check.svg';
+import iconBankLoc from 'assets/icon-loc-bank.svg';
+import iconIntLoc from 'assets/icon-int-bank.svg';
 
 import * as S from './styles';
 
@@ -15,11 +17,11 @@ function Withdraw() {
       </h6>
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={iconBankLoc} alt="" />
           <p>Local Bank</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={iconIntLoc} alt="" />
           <p>International Bank</p>
         </li>
       </ul>

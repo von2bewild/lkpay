@@ -4,6 +4,7 @@ import jp from 'assets/flags/jp.svg';
 import kr from 'assets/flags/kr.svg';
 import cn from 'assets/flags/cn.svg';
 import bankLoc from 'assets/img-bank-loc.svg';
+import bankLogo from 'assets/img-bank-logo.svg';
 import person from 'assets/img-person-jp.png';
 
 import * as S from './styles';
@@ -48,7 +49,7 @@ function Deposits() {
             </h6>
           </li>
           <li>
-            <img src={bankLoc} alt="" />
+            <img src={bankLogo} alt="" />
             <h5>LKPay’s Japanese Partner Bank Account</h5>
           </li>
         </ul>

@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { colors } from 'themes/colors';
+import bg from 'assets/bg-affiliates-header.jpg';
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 800px;
-  background: ${colors.dark_1};
+  background: ${colors.dark_1} url(${bg}) center/cover no-repeat;
   color: #fff;
   padding: 40px 20px;
 

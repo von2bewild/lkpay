@@ -46,8 +46,6 @@ export const Wrapper = styled.div`
 
       img {
         width: 100px;
-        height: 122px;
-        border: 1px solid #ddd;
         display: block;
         margin: 0 auto 10px;
       }

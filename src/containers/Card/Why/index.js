@@ -1,4 +1,11 @@
 import React from 'react';
+
+import iconCard1 from 'assets/icon-card-1.svg';
+import iconCard2 from 'assets/icon-card-2.svg';
+import iconCard3 from 'assets/icon-card-3.svg';
+import iconCard4 from 'assets/icon-card-4.svg';
+
+
 import * as S from './styles';
 
 function Why() {
@@ -8,7 +15,7 @@ function Why() {
       <ul>
         <li>
           <header>
-            <img src="" alt="" />
+            <img src={iconCard1} alt="" />
             <h5>safe</h5>
           </header>
           <footer>
@@ -21,7 +28,7 @@ function Why() {
         </li>
         <li>
           <header>
-            <img src="" alt="" />
+            <img src={iconCard2} alt="" />
             <h5>transparent</h5>
           </header>
           <footer>
@@ -33,7 +40,7 @@ function Why() {
         </li>
         <li>
           <header>
-            <img src="" alt="" />
+            <img src={iconCard3} alt="" />
             <h5>instant</h5>
           </header>
           <footer>
@@ -45,7 +52,7 @@ function Why() {
         </li>
         <li>
           <header>
-            <img src="" alt="" />
+            <img src={iconCard4} alt="" />
             <h5>convenient</h5>
           </header>
           <footer>

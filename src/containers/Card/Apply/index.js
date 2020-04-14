@@ -1,5 +1,10 @@
 import React from 'react';
 import person from 'assets/img-person-jp.png';
+import imgProofPassport from 'assets/img-proof-passport.svg';
+import imgProofLegal from 'assets/img-proof-legal.svg';
+import imgProofAddress from 'assets/img-proof-address.svg';
+import imgBankLogo from 'assets/img-bank-logo.svg';
+import imgCardLogo from 'assets/img-card-logo.svg';
 
 import * as S from './styles';
 
@@ -22,15 +27,15 @@ function Apply() {
       </h6>
       <header>
         <article>
-          <img src="" alt="" />
+          <img src={imgProofPassport} alt="" />
           <h3>Passport</h3>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={imgProofLegal} alt="" />
           <h3>Proof of Legal Existence</h3>
         </article>
         <article>
-          <img src="" alt="" />
+          <img src={imgProofAddress} alt="" />
           <h3>Proof of Address</h3>
         </article>
       </header>
@@ -45,7 +50,7 @@ function Apply() {
           <span className="arrow" />
         </li>
         <li>
-          <img src="" alt="" className="bank" />
+          <img src={imgBankLogo} alt="" className="bank" />
           <h5>LKPAY</h5>
           <h4>Review</h4>
         </li>
@@ -53,7 +58,7 @@ function Apply() {
           <span className="arrow" />
         </li>
         <li>
-          <img src="" alt="" className="bank" />
+          <img src={imgCardLogo} alt="" className="bank" />
           <h5>Card Company</h5>
           <h4>Review</h4>
         </li>

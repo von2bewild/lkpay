@@ -1,5 +1,7 @@
 import React from 'react';
 import check from 'assets/icon-check.svg';
+import imgProofLegal from 'assets/img-proof-legal.svg';
+import imgProofAddress from 'assets/img-proof-address.svg';
 
 import * as S from './styles';
 
@@ -22,12 +24,12 @@ function Withdraw() {
       </h6>
       <ul>
         <li>
-          <img src="" alt="" />
-          <p>Local Bank</p>
+          <img src={imgProofLegal} alt="" />
+          <p>Proof of Legal Identity</p>
         </li>
         <li>
-          <img src="" alt="" />
-          <p>International Bank</p>
+          <img src={imgProofAddress} alt="" />
+          <p>Proof of Address</p>
         </li>
       </ul>
       <article>

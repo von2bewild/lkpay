@@ -59,8 +59,6 @@ export const Wrapper = styled.div`
       img {
         display: block;
         width: 130px;
-        height: 126px;
-        border: 1px solid #ddd;
         margin: auto;
         @media (max-width: 600px) {
           width: 70px;

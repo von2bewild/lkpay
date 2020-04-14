@@ -51,7 +51,6 @@ export const Wrapper = styled.div`
   img {
     width: 50px;
     height: 50px;
-    border: 1px solid ${colors.gray_4};
     display: block;
     margin: auto;
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import person from 'assets/img-person-jp.png';
+import imgBankLogo from 'assets/img-bank-logo.svg';
 
 import * as S from './styles';
 
@@ -22,7 +23,7 @@ function Easy() {
           <span className="arrow" />
         </li>
         <li>
-          <img src="" alt="" className="bank" />
+          <img src={imgBankLogo} alt="" className="bank" />
           <h5>LKPay / Card Company</h5>
           <h4>APPROVAL</h4>
         </li>

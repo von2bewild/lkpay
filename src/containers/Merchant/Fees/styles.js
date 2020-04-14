@@ -76,7 +76,6 @@ export const Wrapper = styled.div`
         height: 45px;
         margin-right: 15px;
         display: block;
-        border: 1px solid ${colors.gray_4};
         flex: 0 0 45px;
       }
       p {

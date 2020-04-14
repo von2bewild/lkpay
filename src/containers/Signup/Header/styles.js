@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { colors } from 'themes/colors';
+import bg from 'assets/bg-signup-header.jpg';
 
 export const Wrapper = styled.div`
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${colors.dark_2};
+  background: ${colors.dark_2} url(${bg}) center/cover no-repeat;
   padding: 40px 20px;
 
   ul {

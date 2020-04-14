@@ -1,5 +1,11 @@
 import React from 'react';
 import check from 'assets/icon-check.svg';
+import imgGlobalBusinesses from 'assets/img-global-businesses.png';
+import imgGlobalCustomers from 'assets/img-global-businesses.png';
+import imgPersonCn from 'assets/img-person-cn.png';
+import imgPersonJp from 'assets/img-person-jp.png';
+import imgMerchantCn from 'assets/img-cn-merchant.png';
+import imgMerchantKr from 'assets/img-kr-merchant.png';
 
 import * as S from './styles';
 
@@ -37,7 +43,7 @@ function WhoShouldUse() {
 
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={imgGlobalCustomers} alt="" />
           <p className="label">Global Customers</p>
         </li>
         <li>
@@ -45,14 +51,14 @@ function WhoShouldUse() {
           <p className="label2">Local Currency Settlement</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={imgGlobalBusinesses} alt="" />
           <p className="label">Global Businesses</p>
         </li>
       </ul>
 
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={imgPersonJp} alt="" />
           <p className="label">In Japan</p>
         </li>
         <li>
@@ -60,14 +66,14 @@ function WhoShouldUse() {
           <p className="label2">Borderless Money Transfer</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={imgPersonCn} alt="" />
           <p className="label">In China</p>
         </li>
       </ul>
 
       <ul>
         <li>
-          <img src="" alt="" />
+          <img src={imgMerchantKr} alt="" />
           <p className="label">Korean Merchant</p>
         </li>
         <li>
@@ -83,7 +89,7 @@ function WhoShouldUse() {
           </small>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src={imgMerchantCn} alt="" />
           <p className="label">Chinese Merchant</p>
         </li>
       </ul>

@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+
+import bgHeader from 'assets/bg-merchant-header.jpg';
+
 import { colors } from 'themes/colors';
 
 export const Wrapper = styled.div`
-  background: ${colors.navy_blue};
+  background: ${colors.navy_blue} url(${bgHeader}) center/cover no-repeat;
   height: 600px;
   display: flex;
   align-items: center;
